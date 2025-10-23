@@ -1,18 +1,51 @@
-# audio_transcriber
+# 🎙️ Audio Transcriber Demo (Flutter)
 
-“Audio Recorder & Speech Transcriber”
+## 🧭 Overview
+A Flutter demo app that allows users to **record audio**, **transcribe it into text**, and **manage recordings locally**.  
+Users can view past recordings, play or pause audio, edit transcripts, and export them as `.txt` files.  
 
-## Getting Started
+This project demonstrates clean architecture, local state management with `Provider`, and integration with speech-to-text APIs.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### ✅ Core Requirements
+- **Record Audio** – Start/stop recording with microphone permission and live duration display.  
+- **Transcribe Audio** – Converts recorded audio to text using a speech-to-text API.  
+- **List & View Recordings** – Displays all saved recordings with filename, duration, and transcript preview.  
+- **Detail Screen** – View playback controls and full transcript with edit/save support.  
+- **Error & Progress Handling** – Snackbars and loaders for upload/transcribe states.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# audio_transcriber
-# audio_transcriber
+### 💡 Bonus Features
+- 🔍 **Search/Filter** – Filter recordings by name or transcript content.  
+- ✏️ **Edit & Save** – Edit transcripts inline and save changes locally.  
+- 📋 **Copy/Export** – Copy transcript to clipboard or export as `.txt`.  
+- 🎵 **Audio Player** – Play/pause individual recordings with dynamic button updates.  
+
+---
+
+## 🧱 Tech Stack
+
+| Component | Package | Purpose |
+|------------|----------|----------|
+| 🎧 Audio Recording | `flutter_sound` / `record` | Record and save audio files |
+| 🔊 Playback | `just_audio` | Local file playback and duration |
+| 🧠 State Management | `provider` | ViewModel-based architecture |
+| 🗂️ Storage | `path_provider` + local | Stores audio + transcript locally |
+| 🗣️ Transcription | Speech-to-text API | Converts audio to text |
+| 💬 UI | `Material` widgets | Modern and clean interface |
+
+---
+
+## 📱 App Flow
+1. **Home Screen** – Start/stop recording, view list of previous recordings.  
+2. **Detail Screen** – Play audio, transcribe, edit, save, copy, or export transcript.  
+3. **Search Bar** – Quickly filter recordings by filename or text.
+
+---
+
+## ⚙️ Setup Instructions
+1. Clone the project:
+   ```bash
+   git clone https://github.com/yourusername/audio_transcriber_demo.git
