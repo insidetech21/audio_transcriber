@@ -45,6 +45,19 @@ This project demonstrates clean architecture, local state management with `Provi
 
 ---
 
+## 🧪 Steps to Test the App
+
+1. Grant microphone permission when prompted.
+2. Tap the Record button to start recording; tap Stop to finish.
+3. The recording appears in the Home Screen list with the filename and duration.
+4. Tap Play to listen to the audio.
+5. Tap Transcribe to convert the audio to text.
+6. Edit the transcript if needed.
+7. Use the Save, Copy, or Export .txt buttons to manage the transcript.
+8. Use the Search Bar to filter recordings by filename or transcript text.
+
+---
+
 ## ⚙️ Setup Instructions
 1. Clone the project:
    ```bash
